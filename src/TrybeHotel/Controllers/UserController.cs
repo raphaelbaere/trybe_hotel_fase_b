@@ -26,7 +26,7 @@ namespace TrybeHotel.Controllers
         [HttpPost]
         public IActionResult Add([FromBody] UserDtoInsert user)
         {
-            var ifExist = _repository.GetUserByEmail(user.Email);
+            var ifExist = _repository.GetUserByEmail(user.Email!);
             if (ifExist != null)
             {
                 return Conflict(new { message = "User email already exists" } ) ;                
