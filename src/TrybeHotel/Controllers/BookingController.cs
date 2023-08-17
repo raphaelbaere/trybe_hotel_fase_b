@@ -21,8 +21,14 @@ namespace TrybeHotel.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = "Client")] 
         public IActionResult Add([FromBody] BookingDtoInsert bookingInsert){
-            throw new NotImplementedException();
+          var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+          var booking = _repository.Add(bookingInsert, userEmail!);
+          if (booking == null) {
+            return BadRequest(new { message = "Guest quantity over room capacity"});
+          }
+          return Created("", booking);
         }
 
 

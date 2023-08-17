@@ -28,6 +28,111 @@
           }
         },
         {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/raphael/Trybe/C%23/2/csharp-026-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 74,
+                  "endLine": 18,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/raphael/Trybe/C%23/2/csharp-026-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 72,
+                  "endLine": 19,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/raphael/Trybe/C%23/2/csharp-026-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 24,
+                  "endLine": 22,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/raphael/Trybe/C%23/2/csharp-026-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 26,
+                  "endLine": 29,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/raphael/Trybe/C%23/2/csharp-026-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 36,
+                  "endLine": 50,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CA1050",
           "level": "note",
           "message": "Declare types in namespaces",
@@ -121,6 +226,34 @@
           "shortDescription": "An analyzer instance cannot be created",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8032)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Dereference of a possibly null reference.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8603": {
+          "id": "CS8603",
+          "shortDescription": "Possible null reference return.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8603)",
           "properties": {
             "category": "Compiler",
             "isEnabledByDefault": true,
