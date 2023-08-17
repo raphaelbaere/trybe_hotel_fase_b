@@ -17,8 +17,9 @@ namespace TrybeHotel.Repository
 
         public UserDto Login(LoginDto login)
         {
-           var user = _context.Users.First(u => u.Email == login.Email && u.Password == login.Password);
-           if (user == null) {
+           var user = _context.Users.FirstOrDefault(u => u.Email == login.Email && u.Password == login.Password);
+           if (user == null) 
+           {
             return null!;
            }
            return new UserDto

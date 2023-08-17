@@ -23,7 +23,7 @@ namespace TrybeHotel.Controllers
            var successLogin = _repository.Login(login);
            if (successLogin == null) 
            {
-            return Unauthorized(new { message = "Incorrect e-mail or password" });  
+            return Unauthorized(new { Message = "Incorrect e-mail or password" });  
            }
             TokenGenerator tokenGenerator = new();
             var token = tokenGenerator.Generate(successLogin);

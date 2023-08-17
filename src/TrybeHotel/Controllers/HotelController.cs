@@ -26,6 +26,7 @@ namespace TrybeHotel.Controllers
 
         // 5. Desenvolva o endpoint POST /hotel
         [HttpPost]
+        [Authorize(Policy = "Admin")] 
         public IActionResult PostHotel([FromBody] Hotel hotel){
             var hotelToAdd = _repository.AddHotel(hotel);
             return Created("", hotelToAdd);
