@@ -9,4 +9,6 @@ public class Room {
     public int Capacity { get; set; }
     public string? Image { get; set; }
     public int HotelId { get; set; }
+    public ICollection<Booking>? Bookings { get; set; }
+    public Hotel? Hotel { get; set; }
 }

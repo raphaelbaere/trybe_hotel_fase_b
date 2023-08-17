@@ -28,27 +28,6 @@
           }
         },
         {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Secret' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/raphael/Trybe/C%23/2/csharp-026-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Services/TokenOptions.cs",
-                "region": {
-                  "startLine": 6,
-                  "startColumn": 23,
-                  "endLine": 6,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CA1050",
           "level": "note",
           "message": "Declare types in namespaces",
@@ -105,20 +84,6 @@
           "shortDescription": "An analyzer instance cannot be created",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8032)",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
-            ]
-          }
-        },
-        "CS8618": {
-          "id": "CS8618",
-          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
-          "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
           "properties": {
             "category": "Compiler",
             "isEnabledByDefault": true,

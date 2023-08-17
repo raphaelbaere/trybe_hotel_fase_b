@@ -10,6 +10,6 @@ public class Booking {
     public int GuestQuant { get; set; }
     public int UserId { get; set; }
     public int RoomId { get; set; }
-    public ICollection<User>? User { get; set; }
-    public ICollection<Room>? Room { get; set; }
+    public User? User { get; set; }
+    public Room? Room { get; set; }
 }
